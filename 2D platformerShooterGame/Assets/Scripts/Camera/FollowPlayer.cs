@@ -5,15 +5,12 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {   
     // Start is called before the first frame update
-    void Start()
-    {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-    }
+    
+    public Transform playerCam;
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 pos = Player.transform.position;  // Get player position
-        Camera.main.transform.position = new Vector3(pos.x, pos.y, pos.z);
+        transform.position = new Vector3(playerCam.position.x, playerCam.position.y, transform.position.z);
     }
 }
