@@ -1,3 +1,4 @@
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     private void MoveCharacter()
     {
         rb.velocity = new Vector2(MovementDirection * MovementSpeed, rb.velocity.y);
+        
         if(IsJumping)
         {
             rb.AddForce(new Vector2(0f, JumpForce));
@@ -62,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
     private void GetInput()
     {
         MovementDirection = Input.GetAxis("Horizontal");
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetKeyDown("Jump"))
         {
             IsJumping = true;
         }
@@ -75,3 +77,4 @@ public class PlayerMovement : MonoBehaviour
 
     }
 }
+*/
