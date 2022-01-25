@@ -17,6 +17,8 @@ public class CharacterMovement : MonoBehaviour
     private int jumpAbility;
     public int jumpAbilityValue;
 
+    private bool m_wasCrouching = false;
+
     void Start()
     {   
         
