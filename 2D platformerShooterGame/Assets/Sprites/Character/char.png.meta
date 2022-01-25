@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 79cae29f452127b4dad80aa9c659285c
+guid: 850f50e5b4cf0174b8f21735014f0d18
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7366633950587261907
-    second: enemHead
+      213: 110063094613122208
+    second: charHead
   - first:
-      213: 9106355952523032205
-    second: enemArmRight
+      213: 8399387991679549355
+    second: charArmRight
   - first:
-      213: -1307679074804690547
-    second: enemBody
+      213: -4644540916198862998
+    second: charBody
   - first:
-      213: -2738725987686425720
-    second: enemArmLeft
+      213: -4795043959955871156
+    second: charArmLeft
   - first:
-      213: 1210368633161269103
-    second: enemLegRight
+      213: -3494256285842108209
+    second: charLegRight
   - first:
-      213: -4109730634076274424
-    second: enemLegLeft
+      213: -5524089854009648592
+    second: charLegLeft
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -61,7 +61,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -109,127 +109,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemHead
+      name: charHead
       rect:
         serializedVersion: 2
-        x: 56
-        y: 86
+        x: 48
+        y: 94
         width: 22
-        height: 24
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d316174c8a8b3660800000000000000
-      internalID: 7366633950587261907
+      spriteID: 0ac9b492dc5078100800000000000000
+      internalID: 110063094613122208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemArmRight
+      name: charArmRight
       rect:
         serializedVersion: 2
-        x: 36
-        y: 50
+        x: 24
+        y: 40
         width: 6
-        height: 30
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d863664cd76406e70800000000000000
-      internalID: 9106355952523032205
+      spriteID: bafbdb660ee909470800000000000000
+      internalID: 8399387991679549355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemBody
+      name: charBody
       rect:
         serializedVersion: 2
-        x: 54
+        x: 44
         y: 42
-        width: 24
+        width: 30
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d811e025fc03adde0800000000000000
-      internalID: -1307679074804690547
+      spriteID: a6f033105a64b8fb0800000000000000
+      internalID: -4644540916198862998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemArmLeft
+      name: charArmLeft
       rect:
         serializedVersion: 2
-        x: 82
-        y: 50
+        x: 98
+        y: 38
         width: 6
-        height: 30
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88bd1de79371ef9d0800000000000000
-      internalID: -2738725987686425720
+      spriteID: c4aa2747ce4947db0800000000000000
+      internalID: -4795043959955871156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemLegRight
+      name: charLegRight
       rect:
         serializedVersion: 2
-        x: 56
-        y: 12
+        x: 48
+        y: 10
         width: 8
-        height: 24
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6f3adaebd71cc010800000000000000
-      internalID: 1210368633161269103
+      spriteID: fc09430eb68e18fc0800000000000000
+      internalID: -3494256285842108209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemLegLeft
+      name: charLegLeft
       rect:
         serializedVersion: 2
-        x: 72
-        y: 12
+        x: 58
+        y: 10
         width: 8
-        height: 24
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 801c75933cd47f6c0800000000000000
-      internalID: -4109730634076274424
+      spriteID: 03a5a60bb8d7653b0800000000000000
+      internalID: -5524089854009648592
       vertices: []
       indices: 
       edges: []
