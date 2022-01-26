@@ -16,6 +16,7 @@ public class CharacterMovement : MonoBehaviour
     public LayerMask whatIsGround;
     private int jumpAbility;
     public int jumpAbilityValue;
+
     
 
     
@@ -53,6 +54,21 @@ public class CharacterMovement : MonoBehaviour
         }
         else
             speed = 5f;
+
+        if(Input.GetKey(KeyCode.C))
+        {
+            Time.timeScale = 0.3f;
+            Time.fixedDeltaTime = 0.02f * Time.timeScale;
+            
+        }
+        else if(Input.GetKey(KeyCode.V))
+        {
+            Time.timeScale = 1;
+            Time.fixedDeltaTime = 0.02f * Time.timeScale;
+        }
+        
+        
+        
 
         
         
