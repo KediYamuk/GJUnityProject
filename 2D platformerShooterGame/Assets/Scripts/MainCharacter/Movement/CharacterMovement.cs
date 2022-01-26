@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public float speed;
+    public float speed = 5f;
     public float jumpForce;
     private float moveInput;
     private Rigidbody2D rb;
@@ -16,6 +16,7 @@ public class CharacterMovement : MonoBehaviour
     public LayerMask whatIsGround;
     private int jumpAbility;
     public int jumpAbilityValue;
+    
 
     
 
@@ -46,6 +47,13 @@ public class CharacterMovement : MonoBehaviour
             jumpAbility--;
             
         }
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 9f;
+        }
+        else
+            speed = 5f;
+
         
         
     }
@@ -66,7 +74,7 @@ public class CharacterMovement : MonoBehaviour
         {
             Flip();
         }
-
+        
     }
     //Flipping Character
     void Flip()
