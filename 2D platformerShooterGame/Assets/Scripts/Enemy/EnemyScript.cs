@@ -22,6 +22,7 @@ public class EnemyScript : MonoBehaviour
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        
     }
     void Start()
     {
