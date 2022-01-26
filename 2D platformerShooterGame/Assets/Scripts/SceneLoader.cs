@@ -15,4 +15,9 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName:"SampleScene");
     }
+
+    public void OpenSettings()
+    {
+        SceneManager.LoadScene(sceneName:"Settings");
+    }
 }
