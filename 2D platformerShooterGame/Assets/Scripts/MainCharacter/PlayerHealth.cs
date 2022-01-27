@@ -6,7 +6,11 @@ public class PlayerHealth : MonoBehaviour
 {
     
     public int health = 100;
+    public bool playerIsDead = false;
     public GameObject deathEffect;
+    public GameObject player;
+
+    public GameObject gameOverScreen;
     
     public void TakeDamage(int damage)
     {
@@ -21,8 +25,10 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
        Instantiate(deathEffect,transform.position, Quaternion.identity);
-       Destroy(gameObject);
-        
+       player.SetActive(false);
+       playerIsDead = true;  
+       gameOverScreen.SetActive(true);
+       Time.timeScale = 0f;
     }
 
     void Start()
