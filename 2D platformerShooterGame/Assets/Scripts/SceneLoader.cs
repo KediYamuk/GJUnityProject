@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    #region Main Menu/Options Menu(from main)
+    
     public void QuitGame()
     {
         Application.Quit();
@@ -25,4 +27,15 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(sceneName:"StartMenu");
     }
 
+    #endregion
+
+    
+    #region Options Menu(from pause)
+    
+    public void OpenSettingsP()
+    {
+        SceneManager.LoadScene(sceneName:"SampleScene")
+    }
+
+    #endregion
 }
