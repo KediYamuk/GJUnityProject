@@ -8,7 +8,6 @@ public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
     public Dropdown resolutionDropdown;
-
     Resolution[] resolutions;
     
     void Start()
@@ -18,14 +17,14 @@ public class SettingsMenu : MonoBehaviour
 
         List<string> options = new List<string>();
 
-        int_currentResolutionIndex = 0;
+        int currentResolutionIndex = 0;
         for (int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + "x" + resolutions[i].height;
             options.Add(option);
 
             if (resolutions[i].width == Screen.currentResolution.width &&
-                resolutions[i].height == Screen.currentResoluyion.height)
+                resolutions[i].height == Screen.currentResolution.height)
             {
                 currentResolutionIndex = i;
             }
@@ -42,7 +41,7 @@ public class SettingsMenu : MonoBehaviour
     
     public void SetVolume (float volume)
     {
-            audioMixer.SetFloat("MVolume", volume);
+        audioMixer.SetFloat("MVolume", Mathf.Log10(volume) * 20);
     }
     #endregion
     
@@ -66,9 +65,11 @@ public class SettingsMenu : MonoBehaviour
 
     #region Resolution
 
-
-
+    public void SetResolution (int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen );
+    }
 
     #endregion
-
 }
