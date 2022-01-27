@@ -13,6 +13,7 @@ public class SceneLoader : MonoBehaviour
     public void OpenGame()
     {
         SceneManager.LoadScene(sceneName:"Level1");
+        Time.timeScale = 1f;
     }
 
     public void BackMain()
