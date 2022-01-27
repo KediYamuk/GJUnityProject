@@ -15,12 +15,16 @@ public class bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         EnemyScript enemy = hitInfo.GetComponent<EnemyScript>();
+        
+
         if(enemy != null)
         {
             enemy.TakeDamage(damage);
             
         }
         Destroy(gameObject);
+        
+        
         
         
         
