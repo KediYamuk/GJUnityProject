@@ -6,8 +6,7 @@ public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-
-    /*public GameObject gameOverOverlay;*/
+    public GameObject gameOverOverlay;
 
     void Start()
     {
@@ -17,7 +16,7 @@ public class Weapon : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetButtonDown("Fire1")/* && !gameOverOverlay.activeSelf*/)
+        if(Input.GetButtonDown("Fire1") && !gameOverOverlay.activeSelf)
         {
             Shoot();
         }
