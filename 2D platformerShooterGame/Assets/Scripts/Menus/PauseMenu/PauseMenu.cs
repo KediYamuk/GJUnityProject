@@ -15,10 +15,15 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)) 
         {
-            if (isPaused)
+            if (isPaused && !inSettings)
             {
                 Resume();
-            } else
+            } 
+            else if (isPaused && inSettings)
+            {
+            //Do nothing   
+            }
+            else
             {
                 Pause();
             }

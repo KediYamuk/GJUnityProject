@@ -5,7 +5,9 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     public int health = 100;
+    public bool enemyIsDead = false;
     public GameObject deathEffect;
+    public GameObject enemy;
     
 
 
@@ -22,7 +24,8 @@ public class EnemyScript : MonoBehaviour
     void Die()
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        enemy.SetActive(false);
+        enemyIsDead = true;
         
     }
     void Start()
