@@ -5,7 +5,7 @@ using UnityEngine;
 public class Balance : MonoBehaviour
 {
     public float restingAngle = 0f;
-    public float force = 750f;
+    public float force = 100f;
 
     private Rigidbody2D rb;
     private void Start()
