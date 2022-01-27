@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     
+    public Slider healthBar;
     public int health = 100;
     public bool playerIsDead = false;
     public GameObject deathEffect;
@@ -23,6 +24,11 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
+    public void SetHealth()
+    {
+        healthBar.value = health;
+    }
+    
     void Die()
     {
        Instantiate(deathEffect,transform.position, Quaternion.identity);
