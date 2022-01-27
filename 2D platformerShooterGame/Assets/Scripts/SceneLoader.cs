@@ -8,7 +8,6 @@ public class SceneLoader : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-        Debug.Log("Quit!");
     }
 
     public void StartGame()
@@ -20,4 +19,10 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName:"Settings");
     }
+
+    public void BackMain()
+    {
+        SceneManager.LoadScene(sceneName:"StartMenu");
+    }
+
 }
