@@ -10,9 +10,9 @@ public class SceneLoader : MonoBehaviour
         Application.Quit();
     }
 
-    public void Game()
+    public void OpenGame()
     {
-        SceneManager.LoadScene(sceneName:"SampleScene");
+        SceneManager.LoadScene(sceneName:"Level1");
     }
 
     public void BackMain()
@@ -27,6 +27,6 @@ public class SceneLoader : MonoBehaviour
 
     public void OpenSettingsP()
     {
-        SceneManager.LoadScene(sceneName:"SampleScene");
+        SceneManager.LoadScene(sceneName:"SettingsP");
     }
 }
