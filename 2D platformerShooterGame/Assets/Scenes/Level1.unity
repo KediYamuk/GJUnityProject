@@ -2414,6 +2414,10 @@ PrefabInstance:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 229970762}
+    - target: {fileID: 6633894917549510556, guid: c6cb8621d6720dc4eaaf7b008859d5e5, type: 3}
+      propertyPath: gameOverOverlay
+      value: 
+      objectReference: {fileID: 229970762}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6cb8621d6720dc4eaaf7b008859d5e5, type: 3}
 --- !u!1 &729242944
@@ -6418,6 +6422,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6633894917549510556, guid: c6cb8621d6720dc4eaaf7b008859d5e5, type: 3}
       propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 229970762}
+    - target: {fileID: 6633894917549510556, guid: c6cb8621d6720dc4eaaf7b008859d5e5, type: 3}
+      propertyPath: gameOverOverlay
       value: 
       objectReference: {fileID: 229970762}
     - target: {fileID: 6633894918876082586, guid: c6cb8621d6720dc4eaaf7b008859d5e5, type: 3}
