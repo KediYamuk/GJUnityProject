@@ -4,7 +4,5 @@ using UnityEngine;
 
 public class FullscreenToggle : MonoBehaviour
 {
-    // Start is called before the first frame update
-
-    
+    // Start is called before the first frame update  
 }
