@@ -1,28 +1,3 @@
-/*
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using CodeMonkey.Utils;
-
-public class Pivot : MonoBehaviour
-{
-    private Transform aimTransform;
-
-    void Awake()
-    {
-        aimTransform = transform.Find("Arm");
-
-    }
-    void Update()
-    {
-        Vector3 mousePosition = UtilsClass.GetMouseWorldPosition();
-        
-        Vector3 aimDirection = (mousePosition - transform.position).normalized;
-        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-        aimTransform.eulerAngles = new Vector3(0, 0, angle);
-    }
-}
-*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
