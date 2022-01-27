@@ -18,11 +18,11 @@ public class ArmRotate : MonoBehaviour
     }
 
     
-    void Update()
+    void FixedUpdate()
     {
         
     }
-    private void FixedUpdate()
+    private void Update()
     {
         Vector3 mousePos = new Vector3(cam.ScreenToWorldPoint(Input.mousePosition).x, cam.ScreenToWorldPoint(Input.mousePosition).y, 0f);
         Vector3 difference = mousePos - transform.position;

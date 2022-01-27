@@ -20,6 +20,10 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
     private Rigidbody2D rb;
 
+    
+    
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
