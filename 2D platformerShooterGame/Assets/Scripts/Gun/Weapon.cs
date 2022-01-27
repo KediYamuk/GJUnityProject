@@ -7,6 +7,8 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
+    public GameObject gameOverOverlay;
+
     void Start()
     {
         //za  xd
@@ -15,7 +17,7 @@ public class Weapon : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(Input.GetButtonDown("Fire1") && !gameOverOverlay.activeSelf)
         {
             Shoot();
         }
