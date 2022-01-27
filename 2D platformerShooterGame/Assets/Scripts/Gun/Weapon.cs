@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour
 
     void Start()
     {
-        
+        //za  xd
     }
 
     

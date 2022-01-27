@@ -30,15 +30,4 @@ public class PlayerHealth : MonoBehaviour
        gameOverScreen.SetActive(true);
        Time.timeScale = 0f;
     }
-
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
-    }
 }

@@ -28,14 +28,4 @@ public class EnemyScript : MonoBehaviour
         enemyIsDead = true;
         
     }
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
-    }
 }
