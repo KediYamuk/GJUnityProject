@@ -43,12 +43,14 @@ public class PauseMenu : MonoBehaviour
     {
         settingsUI.SetActive(true);
         inSettings = true;
+        pauseMenuUI.SetActive(false);
     }
 
     public void SettingsOff()
     {
         settingsUI.SetActive(false);
         inSettings = false;    
+        pauseMenuUI.SetActive(true);
     }
 
 }
