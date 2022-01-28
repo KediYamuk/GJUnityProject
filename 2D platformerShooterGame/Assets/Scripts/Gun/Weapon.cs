@@ -6,7 +6,7 @@ public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-    public GameObject gameOverOverlay;
+    /*public GameObject gameOverOverlay; */
 
     void Start()
     {
