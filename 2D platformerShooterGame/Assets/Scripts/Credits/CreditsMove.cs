@@ -5,19 +5,21 @@ using UnityEngine;
 public class CreditsMove : MonoBehaviour
 {
     public int speed;
-    public float time = 0;
+    public float time;
     void Update()
     {
-        if (time == 0)
-        {
-            
-        }
-        
+        MoveUp();
     }
-
+      
     void MoveUp()
     {
-        time += 1;
+        if (time > 0)
+        {
+            time -= Time.deltaTime;
+        }
+        else
+        {
         transform.Translate(Vector2.up * Time.deltaTime * speed);
+        }
     }
 }
