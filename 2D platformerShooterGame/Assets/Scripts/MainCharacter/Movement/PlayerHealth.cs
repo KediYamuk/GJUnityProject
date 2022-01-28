@@ -1,18 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
     
-    public Slider healthBar;
     public int health = 100;
-    public bool playerIsDead = false;
     public GameObject deathEffect;
+    public GameObject gameOverOverlay;
     public GameObject player;
-
-    public GameObject gameOverScreen;
     
     public void TakeDamage(int damage)
     {
@@ -24,17 +20,23 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
-    public void SetHealth()
-    {
-        healthBar.value = health;
-    }
-    
     void Die()
     {
        Instantiate(deathEffect,transform.position, Quaternion.identity);
        player.SetActive(false);
-       playerIsDead = true;  
-       gameOverScreen.SetActive(true);
+       gameOverOverlay.SetActive(true);
        Time.timeScale = 0f;
+        
+    }
+
+    void Start()
+    {
+        
+    }
+
+    
+    void Update()
+    {
+        
     }
 }

@@ -7,12 +7,18 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject settingsUI;
+    [HideInInspector]
     public GameObject gameOverOverlay;
     public static bool isPaused = false;
     public static bool inSettings = false;
     public static bool gameOver = false;
 
     // Update is called once per frame
+    void Start()
+    {
+        gameOverOverlay = GameObject.Find("GameOverPanel");
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) 
