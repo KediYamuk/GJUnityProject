@@ -12,7 +12,7 @@ public class bullet : MonoBehaviour
     {
         rb.velocity = transform.right * speed;
     }
-    void OnTriggerEnter2D(Collider2D hitInfo)
+    /*void OnTriggerEnter2D(Collider2D hitInfo)
     {
         EnemyScript enemy = hitInfo.GetComponent<EnemyScript>();
         
@@ -28,7 +28,7 @@ public class bullet : MonoBehaviour
         
         
         
-    }
+    }*/
     void OnBecameInvisible() {
          Destroy(gameObject);
      }

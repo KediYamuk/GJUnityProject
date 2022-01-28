@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ArmRotate : MonoBehaviour
 {
-    public int isLeftOrRight;
+    
     public float speed = 300f;
     private Rigidbody2D rb;
     public Camera cam;
