@@ -11,11 +11,6 @@ public class SceneLoader : MonoBehaviour
         Application.Quit();
     }
 
-    public void ReloadGame1()
-    {
-        SceneManager.LoadScene(sceneName:"Load");
-    }
-
     public void OpenGame()
     {
         SceneManager.LoadScene(sceneName:"Level1");
