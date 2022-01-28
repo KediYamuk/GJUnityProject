@@ -15,8 +15,8 @@ public class Weapon : MonoBehaviour
 
     
     void Update()
-    {
-        if(Input.GetButtonDown("Fire1") && !gameOverOverlay.activeSelf)
+    {   
+        if(Input.GetButtonDown("Fire1") /*&& !gameOverOverlay.activeSelf*/)
         {
             Shoot();
         }
