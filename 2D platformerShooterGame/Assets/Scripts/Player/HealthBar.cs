@@ -37,6 +37,10 @@ public class HealthBar : MonoBehaviour
         {
             gameOver = true;
         }
+        else
+        {
+            gameOver = false;
+        }
     }
     
     public void SetHealth()
