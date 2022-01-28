@@ -4775,7 +4775,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 166781294}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: ReloadGame1
+        m_MethodName: OpenGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
