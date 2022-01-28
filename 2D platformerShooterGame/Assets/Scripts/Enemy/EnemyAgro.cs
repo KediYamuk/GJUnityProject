@@ -12,8 +12,8 @@ public class EnemyAgro : MonoBehaviour
     [SerializeField]
     float moveSpeed;
     Rigidbody2D rb;
-    private bool facingRight = true;
-    private int flipCount = 1;
+    [SerializeField]
+    private bool flipped = false;
     
 
     void Start()
@@ -41,12 +41,19 @@ public class EnemyAgro : MonoBehaviour
         if(transform.position.x < player.position.x)
         {
             //Enemy is to the left side of the player, move right
+            if (flipped == true)
+            {
+                FlipBack();
+            }
             rb.velocity = new Vector2(moveSpeed, 0);
 
         }
         else if(transform.position.x > player.position.x)
-        {
-            Flip();
+        {        
+            if (flipped == false)
+            {
+                Flip();
+            }
             rb.velocity = new Vector2(moveSpeed, 0);
         }
     }
@@ -56,11 +63,15 @@ public class EnemyAgro : MonoBehaviour
     }
     void Flip()
     {
-        facingRight = !facingRight;
+        flipped = true;
         transform.Rotate(0f, 180f, 0f);
     }
-    
-    
+
+    void FlipBack()
+    {
+        flipped = false;
+        transform.Rotate(0f, 180f, 0f);
+    }
 }
 
     

@@ -6,7 +6,7 @@ public class EnemyFlip : MonoBehaviour
 {
     
 
-    private bool facingRight = true;
+    private bool flipped = false;
     public Transform player;
 
     void Start()
@@ -21,19 +21,38 @@ public class EnemyFlip : MonoBehaviour
     }
     void FixedUpdate()
     {
-        
-        if(facingRight == false)
+        FlipEnemy();
+    }
+    
+    void FlipEnemy()
+    {
+        if(transform.position.x < player.position.x)
         {
-            Flip();
+            //Enemy is to the left side of the player, move right
+            if (flipped == true)
+            {
+                FlipBack();
+            }
+
         }
-        else if(facingRight == true)
-        {
-            Flip();
+        else if(transform.position.x > player.position.x)
+        {        
+            if (flipped == false)
+            {
+                Flip();
+            }
         }
     }
+    
     void Flip()
     {
-        facingRight = !facingRight;
+        flipped = true;
+        transform.Rotate(0f, 180f, 0f);
+    }
+
+    void FlipBack()
+    {
+        flipped = false;
         transform.Rotate(0f, 180f, 0f);
     }
 }
