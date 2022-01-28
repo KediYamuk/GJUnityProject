@@ -7,32 +7,34 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject settingsUI;
-    [HideInInspector]
     public GameObject gameOverOverlay;
     public static bool isPaused = false;
     public static bool inSettings = false;
     public static bool gameOver = false;
 
-    // Update is called once per frame
+    
     void Start()
     {
-        gameOverOverlay = GameObject.Find("GameOverPanel");
+        CheckOver();
+        CheckPause();
+        CheckSettings();
     }
-
     void Update()
     {
+        CheckOver();
+        CheckPause();
+        CheckSettings();
         if (Input.GetKeyDown(KeyCode.Escape)) 
         {
-            CheckOver();
-            if (isPaused & !inSettings & !gameOver)
+            if (isPaused && !inSettings && !gameOver)
             {
                 Resume();
             } 
-            else if (isPaused & inSettings & gameOver)
+            else if (isPaused && inSettings && gameOver)
             {
             //Do nothing   
             }
-            else if (!gameOver & !inSettings)
+            else if (!isPaused && !gameOver && !inSettings)
             {
                 Pause();
             }
@@ -44,6 +46,22 @@ public class PauseMenu : MonoBehaviour
         if (gameOverOverlay.activeSelf)
         {
             gameOver = true;
+        }
+    }
+
+    private void CheckPause()
+    {
+        if (!pauseMenuUI.activeSelf)
+        {
+            isPaused = false;
+        }
+    }
+
+    private void CheckSettings()
+    {
+        if(!settingsUI.activeSelf)
+        {
+            inSettings = false;
         }
     }
     

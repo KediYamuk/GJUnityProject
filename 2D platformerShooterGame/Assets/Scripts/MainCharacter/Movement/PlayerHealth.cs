@@ -25,8 +25,7 @@ public class PlayerHealth : MonoBehaviour
        Instantiate(deathEffect,transform.position, Quaternion.identity);
        player.SetActive(false);
        gameOverOverlay.SetActive(true);
-       Time.timeScale = 0f;
-        
+       Time.timeScale = 0f;      
     }
 
     void Start()

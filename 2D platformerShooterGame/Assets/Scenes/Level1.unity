@@ -1632,7 +1632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 2081438162}
   settingsUI: {fileID: 1920740098}
-  gameOverOverlay: {fileID: 0}
+  gameOverOverlay: {fileID: 229970762}
 --- !u!1 &447752655
 GameObject:
   m_ObjectHideFlags: 0
@@ -4775,7 +4775,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 166781294}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: OpenGame
+        m_MethodName: ReloadGame1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

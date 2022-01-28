@@ -5,9 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void ReloadGame1()
+    {
+        SceneManager.LoadScene(sceneName:"Load");
+        Invoke("OpenGame", 1);
+
     }
 
     public void OpenGame()
@@ -24,10 +32,5 @@ public class SceneLoader : MonoBehaviour
     public void OpenSettings()
     {
         SceneManager.LoadScene(sceneName:"Settings");
-    }
-
-    public void OpenSettingsP()
-    {
-        SceneManager.LoadScene(sceneName:"SettingsP");
     }
 }
