@@ -14,8 +14,6 @@ public class SceneLoader : MonoBehaviour
     public void ReloadGame1()
     {
         SceneManager.LoadScene(sceneName:"Load");
-        Invoke("OpenGame", 1);
-
     }
 
     public void OpenGame()

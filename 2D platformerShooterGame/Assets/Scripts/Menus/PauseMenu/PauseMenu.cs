@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject settingsUI;
-    public GameObject gameOverOverlay;
+    public GameObject gameOverOverlay;  
     public static bool isPaused = false;
     public static bool inSettings = false;
     public static bool gameOver = false;
@@ -47,6 +47,10 @@ public class PauseMenu : MonoBehaviour
         {
             gameOver = true;
         }
+        else if (!gameOverOverlay.activeSelf)
+        {
+            gameOver = false;
+        }  
     }
 
     private void CheckPause()
@@ -55,6 +59,10 @@ public class PauseMenu : MonoBehaviour
         {
             isPaused = false;
         }
+        else if (pauseMenuUI.activeSelf)
+        {
+            isPaused = true;
+        }
     }
 
     private void CheckSettings()
@@ -62,6 +70,10 @@ public class PauseMenu : MonoBehaviour
         if(!settingsUI.activeSelf)
         {
             inSettings = false;
+        }
+        else if (settingsUI.activeSelf)
+        {
+            inSettings = true;
         }
     }
     
