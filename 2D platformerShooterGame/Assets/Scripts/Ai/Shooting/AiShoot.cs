@@ -44,6 +44,7 @@ public class AiShoot : MonoBehaviour
         
         shootingTime = Time.time + fireRate / 1000;
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.Shoot);
         }
     }
     
