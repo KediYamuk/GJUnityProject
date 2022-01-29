@@ -7,13 +7,15 @@ public class EnemyAgro : MonoBehaviour
     [SerializeField]
     Transform player;
     [SerializeField]
-    float agroRange;
+    float agroRange = 50f;
 
     [SerializeField]
     float moveSpeed;
     Rigidbody2D rb;
     [SerializeField]
     private bool flipped = false;
+    
+    
     
 
     void Start()
@@ -35,7 +37,9 @@ public class EnemyAgro : MonoBehaviour
             //StopChase
             StopChase();
         }
+        
     }
+    
     void ChasePlayer()
     {
         if(transform.position.x < player.position.x)
@@ -54,7 +58,7 @@ public class EnemyAgro : MonoBehaviour
             {
                 Flip();
             }
-            rb.velocity = new Vector2(moveSpeed, 0);
+            rb.velocity = new Vector2(-moveSpeed, 0);
         }
     }
     void StopChase()

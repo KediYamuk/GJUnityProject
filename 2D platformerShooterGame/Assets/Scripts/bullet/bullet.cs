@@ -12,15 +12,24 @@ public class bullet : MonoBehaviour
     {
         rb.velocity = transform.right * speed;
     }
-    /*void OnTriggerEnter2D(Collider2D hitInfo)
+    void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        EnemyScript enemy = hitInfo.GetComponent<EnemyScript>();
+        PlayerHealth player = hitInfo.GetComponent<PlayerHealth>();
         
+
+        if(player != null)
+        {
+            player.TakeDamage(damage);
+            
+        }
+        Destroy(gameObject);
+        
+        AiHealth enemy = hitInfo.GetComponent<AiHealth>();
 
         if(enemy != null)
         {
             enemy.TakeDamage(damage);
-            
+
         }
         Destroy(gameObject);
         
@@ -28,9 +37,9 @@ public class bullet : MonoBehaviour
         
         
         
-    }*/
+    }
     void OnBecameInvisible() {
-         Destroy(gameObject);
+        Destroy(gameObject);
      }
     
     void Update()
