@@ -40,6 +40,7 @@ public class AiShoot : MonoBehaviour
     {
         if (Time.time > shootingTime)
         {
+        
         shootingTime = Time.time + fireRate / 1000;
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         }

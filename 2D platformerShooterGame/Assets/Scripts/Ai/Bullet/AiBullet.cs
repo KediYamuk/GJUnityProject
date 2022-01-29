@@ -8,10 +8,12 @@ public class AiBullet : MonoBehaviour
     public float speed = 20f;
     public int damage = 20;
     public Rigidbody2D rb;
+    public float destroyTime = 3f;
     
     void Start()
     {
         rb.velocity = transform.right * speed;
+        Destroy(gameObject, destroyTime);
     }
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
@@ -29,9 +31,7 @@ public class AiBullet : MonoBehaviour
         
         
     }
-    void OnBecameInvisible() {
-        Destroy(gameObject);
-     }
+    
     
     void Update()
     {

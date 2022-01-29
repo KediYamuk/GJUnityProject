@@ -160,11 +160,28 @@ MonoBehaviour:
   deathEffect: {fileID: 953664887566161677, guid: b63f9edab484724468a431d8a2712b73, type: 3}
   gameOverOverlay: {fileID: 953664887566161677, guid: b63f9edab484724468a431d8a2712b73, type: 3}
   player: {fileID: 890992373}
+--- !u!1 &122291636 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5522098436574103192, guid: a4499e9c8f660064a87485d3d95dbe85, type: 3}
+  m_PrefabInstance: {fileID: 5522098436494017324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &122291639 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 5522098436574103195, guid: a4499e9c8f660064a87485d3d95dbe85, type: 3}
   m_PrefabInstance: {fileID: 5522098436494017324}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &122291641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122291636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d4cdebc831e1449b48cb31b5a8cd8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &657285739
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,6 +628,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8980338004525961878, guid: 51b6f6cb51133a24392a4be8d900c3d2, type: 3}
   m_PrefabInstance: {fileID: 8980338004976694857}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1111691942 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5522098435449442698, guid: a4499e9c8f660064a87485d3d95dbe85, type: 3}
+  m_PrefabInstance: {fileID: 5522098436494017324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1111691944
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111691942}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 024cd5f5429b699488e1bafb8779225e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &462461788292361201
 PrefabInstance:
   m_ObjectHideFlags: 0
