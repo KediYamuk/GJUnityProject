@@ -992,6 +992,7 @@ GameObject:
   - component: {fileID: 556028307}
   - component: {fileID: 556028311}
   - component: {fileID: 556028312}
+  - component: {fileID: 556028313}
   m_Layer: 8
   m_Name: LowerRightArm
   m_TagString: Untagged
@@ -1163,6 +1164,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1059497183}
+--- !u!114 &556028313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556028305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c1eccae232e82746b8ae62a870c394b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gun: {fileID: 498666280}
+  player: {fileID: 890992373}
+  bullet: {fileID: 7063648701028962372, guid: 74728ca7ddbf6fe4bb3671e8191f38a9, type: 3}
+  shootPoint: {fileID: 2115233031}
+  bulletSpeed: 500
 --- !u!1 &657285739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,7 +1883,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8980338004811738661, guid: 51b6f6cb51133a24392a4be8d900c3d2, type: 3}
   m_PrefabInstance: {fileID: 8980338004976694857}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &890992374
+--- !u!114 &890992376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2657,7 +2675,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1793847055}
-  - component: {fileID: 1793847056}
   - component: {fileID: 1793847057}
   - component: {fileID: 1793847058}
   m_Layer: 0
@@ -2691,20 +2708,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1793847056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793847054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c1eccae232e82746b8ae62a870c394b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gun: {fileID: 498666280}
-  player: {fileID: 53153952}
 --- !u!114 &1793847057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2757,7 +2760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115233030}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3002, y: 0.0493, z: -85.33943}
+  m_LocalPosition: {x: 0.3017, y: 0.0493, z: -85.33943}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 498666280}

@@ -29,4 +29,5 @@ public class ArmRotateAi : MonoBehaviour
 
         rb.MoveRotation(Mathf.LerpAngle(rb.rotation, rotZ, speed * Time.deltaTime));
     }
+    
 }
