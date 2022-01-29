@@ -13,12 +13,13 @@ public class CreditsMove : MonoBehaviour
       
     void MoveUp()
     {
-        if (time > 0)
+        if (time > 99)
         {
             time -= Time.deltaTime;
         }
         else
         {
+        time -= Time.deltaTime;
         transform.Translate(Vector2.up * Time.deltaTime * speed);
         }
     }
