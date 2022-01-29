@@ -71,4 +71,9 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName:"Credits");
     }
+
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        NextLevel();
+    }
 }
