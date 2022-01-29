@@ -4350,6 +4350,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3247525317831035720, guid: 1245c79ed6cb43744982cf9f083e4b35, type: 3}
+      propertyPath: Shoot
+      value: 
+      objectReference: {fileID: 8300000, guid: e667c917a679ea24eb770d6e89c8d559, type: 3}
     - target: {fileID: 3247525317831035723, guid: 1245c79ed6cb43744982cf9f083e4b35, type: 3}
       propertyPath: m_Name
       value: sfxManager
