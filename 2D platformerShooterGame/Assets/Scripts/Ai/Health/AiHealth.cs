@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AiHealth : MonoBehaviour
 {
-        public int health = 100;
+    public int health = 100;
     public GameObject deathEffect;
     public GameObject gameOverOverlay;
     public GameObject enemy;
@@ -24,7 +24,6 @@ public class AiHealth : MonoBehaviour
        Instantiate(deathEffect,transform.position, Quaternion.identity);
        enemy.SetActive(false);
        gameOverOverlay.SetActive(true);
-       Time.timeScale = 0f;      
     }
 
     void Start()
