@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7606865852690485366}
   - component: {fileID: 8727900754484767863}
   - component: {fileID: 593514173119094127}
+  - component: {fileID: -4861211950282375914}
   m_Layer: 0
   m_Name: AiBullet
   m_TagString: Untagged
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Sprite: {fileID: 5256125848881989937, guid: 08176baa628b0ae418354699d3d8ed42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -131,3 +132,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &-4861211950282375914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7063648701028962372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8799fae5ba7e1b545b0eecacd17e4f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 35
+  damage: 20
+  rb: {fileID: 593514173119094127}

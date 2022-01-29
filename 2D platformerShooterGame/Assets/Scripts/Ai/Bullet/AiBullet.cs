@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bullet : MonoBehaviour
+public class AiBullet : MonoBehaviour
 {
+    
     public float speed = 20f;
     public int damage = 20;
     public Rigidbody2D rb;
@@ -14,12 +15,12 @@ public class bullet : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        AiHealth ai = hitInfo.GetComponent<AiHealth>();
+        PlayerHealth player = hitInfo.GetComponent<PlayerHealth>();
         
 
-        if(ai != null)
+        if(player != null)
         {
-            ai.TakeDamage(damage);
+            player.TakeDamage(damage);
             
         }
         Destroy(gameObject);
@@ -37,3 +38,4 @@ public class bullet : MonoBehaviour
         
     }
 }
+

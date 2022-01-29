@@ -6,7 +6,7 @@ public class AiHealth : MonoBehaviour
 {
     public int health = 100;
     public GameObject deathEffect;
-    public GameObject gameOverOverlay;
+    
     public GameObject enemy;
     
     public void TakeDamage(int damage)
@@ -23,7 +23,8 @@ public class AiHealth : MonoBehaviour
     {
        Instantiate(deathEffect,transform.position, Quaternion.identity);
        enemy.SetActive(false);
-       gameOverOverlay.SetActive(true);
+       Destroy(enemy);
+       
     }
 
     void Start()
