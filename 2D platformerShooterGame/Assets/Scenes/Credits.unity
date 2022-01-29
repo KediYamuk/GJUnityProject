@@ -815,8 +815,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -112}
-  m_SizeDelta: {x: 788.7517, y: 159.2622}
+  m_AnchoredPosition: {x: 0, y: -419.8816}
+  m_SizeDelta: {x: 788.7517, y: 611.0247}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1331007447
 MonoBehaviour:
@@ -851,7 +851,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '  Orange Kid(font) by Raymond Larabie'
+  m_Text: "  Orange Kid(font) by Raymond Larabie\n[FREE] Freestyle Type Beat 2022
+    - 'Flow Dangerous' l Free Type Beat 2021 l Rap Trap Instrumental\n\uFF22\uFF32\uFF2F\uFF2B\uFF25\uFF2E
+    \uFF0D [FREE] SAD CHILL LOFI TYPE BEAT (SAD EMOTIONAL RAP BEAT 2022)\n[FREE]
+    Trap Type beat _ Freestyle Trap Instrumental 2021 _ NO-CAP\n[FREE] Fast Aggressive
+    808 Rap Beat 'BRUTAL' _ Dark Hip Hop Instrumental _ Free Type Beat \nFREE _ Hard
+    Trap Beat 'Hyped' (Prod. PQNO)\n"
 --- !u!222 &1331007448
 CanvasRenderer:
   m_ObjectHideFlags: 0
