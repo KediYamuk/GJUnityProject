@@ -10,6 +10,7 @@ public class HealthBar : MonoBehaviour
     private bool gameOver = false;
     [SerializeField]
     private GameObject gameOverPanel;
+    public GameObject playerBody;
 
     void Start()
     {
@@ -21,7 +22,7 @@ public class HealthBar : MonoBehaviour
         CheckGameOver();
         if (gameOver == false)
         {
-            health = GameObject.Find("Player").GetComponent<PlayerHealth>().health;
+            health = playerBody.GetComponent<PlayerHealth>().health;
             SetHealth();
         }
         else if (gameOver == true)
