@@ -29,6 +29,7 @@ public class AiShoot : MonoBehaviour
         if(distToPlayer < shootRange)
         {
             Shoot();
+            
         }
         else
         {

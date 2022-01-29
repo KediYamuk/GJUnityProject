@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class sfxManager : MonoBehaviour
 {
-    
-    void Start()
+    public AudioSource Audio;
+    public AudioClip Shoot;
+    public static sfxManager sfxInstance;
+    private void Awake()
     {
-        
-    }
+        if(sfxInstance != null && sfxInstance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
 
-    
-    void Update()
-    {
-        
+        sfxInstance = this;
+        DontDestroyOnLoad(this);
     }
 }

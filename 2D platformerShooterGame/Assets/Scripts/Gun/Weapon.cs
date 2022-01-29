@@ -19,6 +19,7 @@ public class Weapon : MonoBehaviour
         if(Input.GetButtonDown("Fire1") /*&& !gameOverOverlay.activeSelf*/)
         {
             Shoot();
+            sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.Shoot);
         }
     }
     //Shooting Method
